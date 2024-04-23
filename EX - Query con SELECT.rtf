@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat2\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat5\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat6\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat8\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid401\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\partightenfactor0
+
+\f0\b\fs40 \cf0 DB-University SQL ex:\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f1\b0\fs26 \cf0 \
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	0.	}Selezionare tutti gli studenti nati nel 1990 (160) \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 	=====\
+	SELECT *\
+	FROM `students`\
+	WHERE `date_of_birth` >= '1990-01-01'\
+	AND `date_of_birth` < '1991-01-01\'92;\
+\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	0.	}Selezionare tutti i corsi che valgono pi\'f9 di 10 crediti (479)\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 	=====\
+	SELECT *\
+	FROM `courses`\
+	WHERE `cfu` > 10;\
+\
+  3. Selezionare tutti gli studenti che hanno pi\'f9 di 30 anni -> (1459)\
+	=====\
+	SELECT *\
+	FROM `students`\
+	WHERE `date_of_birth` > '1993-04-23\'92;\
+\
+   4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)\
+	=====\
+	SELECT * \
+	FROM `courses` \
+	WHERE `year` = '1'\
+	AND `period` = 'I semestre';\
+\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 {\listtext	0.	}Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 	=====\
+	SELECT * \
+	FROM `exams` \
+	WHERE `date` = '2020-06-20'\
+	AND `hour` >= '14:00:00' ;\
+\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf0 {\listtext	0.	}Selezionare tutti i corsi di laurea magistrale (38)\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 	=====\
+	SELECT * \
+	FROM `degrees` \
+	WHERE `level` = 'magistrale';\
+\
+   7. Da quanti dipartimenti \'e8 composta l'universit\'e0? (12)\
+	=====\
+	SELECT *\
+	FROM\'a0`departments`;	\
+\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls5\ilvl0\cf0 {\listtext	0.	}Quanti sono gli insegnanti che non hanno un numero di telefono?  (50)                    \uc0\u8232 =====\u8232 SELECT *\'a0\u8232 FROM\'a0`teachers`\u8232 \'a0WHERE\'a0`phone`\'a0IS NULL;\
+\pard\pardeftab560\slleading20\qc\partightenfactor0
+\cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 \
+}
